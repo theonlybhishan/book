@@ -10,7 +10,7 @@ class AgentProfile(models.Model):
     )
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    Agent_name = models.OneToOneField(User, on_delete=models.CASCADE)
+    agent_name = models.OneToOneField(User, on_delete=models.CASCADE)
     email = models.EmailField()
     # slug = models.SlugField(unique=True)
     contact_number = models.IntegerField()
